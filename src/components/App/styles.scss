@@ -1,0 +1,19 @@
+.App {
+    background: rgb(61,37,246);
+    background: linear-gradient(171deg, rgba(61,37,246,0.9640231092436975) 2%, rgba(108,133,215,1) 49%, rgba(242,168,194,0.7763480392156863) 74%);
+    background-image:url("../../../public/assets/note.jpg") ;
+    background-size: cover;
+    font-family: 'Klee One', cursive;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & h1 {
+        margin: 2rem;
+        font-family: 'Permanent Marker', cursive;
+        font-size: 7rem;
+        font-weight: 600;
+        color: rgba(243, 23, 23, 0.776);
+    }
+}

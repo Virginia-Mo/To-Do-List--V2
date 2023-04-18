@@ -1,0 +1,44 @@
+.todoItem {
+    display: flex;
+    width: 80%;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin: 0.5rem auto;
+    gap: 5rem;
+    background-image:url("../../../public/assets/note.jpg") ;
+    background-size: cover;
+    transition: 0.2s;
+
+    &:hover {
+       box-shadow: 0 0 0.5rem black;
+       transform: scale(1.03);
+    }
+    &__p {
+        flex: 1;
+        padding: 0.5rem;
+
+        &:focus {
+            outline: none;
+        }
+        &--done {
+            text-decoration: line-through;
+        }
+    }
+    & div {
+        display: flex;
+        align-items: center;
+    }
+}
+.icon {
+    margin-left: 1rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+.drag {
+    box-shadow: 0 0 2rem black;
+}
+@media screen and (max-width: 768px) {
+    .todoItem {
+        width: 90%;
+    }
+}

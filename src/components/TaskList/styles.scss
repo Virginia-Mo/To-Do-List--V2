@@ -1,0 +1,49 @@
+@use 'sass:color';
+
+.todos{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color: #40a3ff;
+    border-radius: 0.5rem;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+
+    &__headings {
+        text-align: center;
+        padding-top: 0.5rem;
+        font-weight: 600;
+        font-size: 2.5rem;
+    }
+}
+.container {
+    display: flex;
+    width: 95%;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+.remove {
+    background-color: rgb(138 249 129);
+}
+.progress {
+    background-color:#FFC107;
+    ;
+}
+.dragactive {
+    background-color:color.scale(#40a3ff, $lightness: 30%);;
+}
+.dragprogress {
+    background-color:color.scale(#FFC107, $lightness: 30%);;
+}
+.dragcomplete {
+    background-color: color.scale(rgb(138 249 129), $lightness: 30%);;
+}
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .todos {
+        width: 95%;
+    }
+}
