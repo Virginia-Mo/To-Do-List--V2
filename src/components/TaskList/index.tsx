@@ -1,4 +1,4 @@
-import { useAppDispatch, useAppSelector } from '../../hooksRedux.ts/hooksTypes';
+import { useAppSelector } from '../../hooksRedux.ts/hooksTypes';
 import { Droppable } from 'react-beautiful-dnd';
 import { taskModel } from '../model/task';
 import TaskItem from '../TaskItem';
