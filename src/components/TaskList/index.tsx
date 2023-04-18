@@ -11,7 +11,7 @@ const tasks = useAppSelector((state) => state.todo.taskList)
 const tasksInProgress = useAppSelector((state) => state.todo.inProgress)
 const doneTasks = useAppSelector((state) => state.todo.doneTasks)
 
-const dispatch = useAppDispatch();
+
 console.log(tasks)
     return (
       <div className='container'> 

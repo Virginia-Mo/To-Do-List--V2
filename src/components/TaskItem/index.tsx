@@ -1,4 +1,4 @@
-import { useAppDispatch, useAppSelector } from '../../hooksRedux.ts/hooksTypes';
+import { useAppDispatch } from '../../hooksRedux.ts/hooksTypes';
 import { Draggable } from 'react-beautiful-dnd';
 import { useEffect, useState, useRef } from 'react';
 import { taskModel } from '../model/task';

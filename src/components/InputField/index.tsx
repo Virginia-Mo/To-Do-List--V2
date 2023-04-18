@@ -1,4 +1,4 @@
-import { useAppDispatch, useAppSelector } from '../../hooksRedux.ts/hooksTypes';
+import { useAppDispatch } from '../../hooksRedux.ts/hooksTypes';
 import { addTask } from '../../reducers/todoReducer';
 import { useRef, useState } from 'react';
 
